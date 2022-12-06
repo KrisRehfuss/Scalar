@@ -3,9 +3,9 @@ import music
 
 def Convert(z):
     z = int(z)
-    print(f'\n{z} Hz = {z} cycles/second')
+    print(f'\n{z} Hz = {z} cycles/s')
     Note2BPM = z * 60
-    print(f'x60 = {Note2BPM} cycles/minute')
+    print(f'x60 = {Note2BPM} cycles/m')
     return Note2BPM
 
 
@@ -22,7 +22,7 @@ def Me(x):
 
 def Make(y):
     y = float(y)
-    while y < 60:
+    while y < 70:
         y = y*2
     else:
         Final = round(y)
@@ -32,7 +32,9 @@ def Make(y):
 def Main(): 
     Letter, Hz = (music.Main())
     Final = Make(Me(Convert(Hz)))
-    print(f'\n{Letter} = {Final} bpm')
+    print(f'\n{Letter} = {Final} bpm\n')
+
+    return Letter, Final
     
 Main()
 
