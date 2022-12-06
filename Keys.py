@@ -32,7 +32,7 @@ def Make(y):
 def Main(): 
     Letter, Hz = (music.Main())
     Final = Make(Me(Convert(Hz)))
-    print(f'\n{Letter} = {Final} bpm\n')
+    print(f'\n{Letter} = {Final} bpm')
 
     return Letter, Final
     

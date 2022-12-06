@@ -22,7 +22,7 @@ def Me(x):
 
 def Make(y):
     y = float(y)
-    while y < 60:
+    while y < 80:
         y = y*2
     else:
         Final = round(y)
@@ -33,7 +33,10 @@ def Main():
     Letter, Hz = (music.Main())
     Final = Make(Me(Convert(Hz)))
     
-    print(f'\n{Letter} = {Hz}Hz\n\n{Final} bpm')
+    print(f'\n{Final} bpm')
+    
+    return Letter, Final
+
     
 Main()
 
